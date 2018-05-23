@@ -3,10 +3,10 @@
 import os
 import sqlite3
 
-from .. import resource_path
+from .. import var_resource_path
 from ..exceptions import *
 
-db = sqlite3.connect(os.path.join(resource_path, "veekun-pokedex.sqlite"))
+db = sqlite3.connect(os.path.join(var_resource_path, "veekun-pokedex.sqlite"))
 cursor = db.cursor()
 
 default_version = "x"

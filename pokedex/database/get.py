@@ -5,11 +5,11 @@ import requests
 import zlib
 from progressbar import ProgressBar
 
-from .. import resource_path
+from .. import var_resource_path
 
 
 def download_database():
-    target = os.path.join(resource_path, "veekun-pokedex.sqlite")
+    target = os.path.join(var_resource_path, "veekun-pokedex.sqlite")
     url = "http://veekun.com/static/pokedex/downloads/veekun-pokedex.sqlite.gz"
     
     if os.path.isfile(target):
