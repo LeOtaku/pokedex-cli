@@ -4,6 +4,7 @@ import os
 
 from .exceptions import *
 from .database.queries import *
+from . import resource_path
 
 class Pokemon(object):
     def __init__(self, pokemon, language=default_language, version=default_version):
